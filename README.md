@@ -3,14 +3,14 @@
 The project started with the base model of AdaBoost. The extension I implemented was to mesh AdaBoost and SVM loss functionality inspired by Rätsch’s Soft Margins for AdaBoost, with quadratic loss with slack variables similar to support vector machines (2001). As he mentions, AdaBoost uses a hard margin pattern for predicting samples. AdaBoost does not perform well when there is noise in the data or overlapping class distributions because it chases outliers and overfits to them (2001). The goal is to improve the Adaboost model's robustness when it interacts with overlapping class distributions and noise. Therefore, replace hard margins with soft margins to allow misclassifications in the margins and to reduce overfitting to abnormal data points.  
 
 
-**How to run**
+## How to run
 pip install -r requirements.txt
 python final_complete.py
 
 **Expected**
 Information about the Dataset and the number results are printed in the terminal. AdaBoost Model will have 2 images: Confusion matrix, plot of the weights' evolution. The SoftBoost will have an additional image of plot of the loss evolution.
 
-**Dataset**
+## Dataset
 Titanic Dataset from Kaggle
 [Titanic Dataset](https://www.kaggle.com/datasets/yasserh/titanic-dataset)
 
@@ -27,7 +27,7 @@ I took the AdaBoost class model and modified the calculate weights and update st
 
 In the update step, an ensemble score was added. The ensemble score comes from SVM. THe sign states what the prediction is {+1,-1} and the magnitude conveys how confident the prediction is. The margin is the correct classification times ensemble score. The ensemble score is used determine the predictions in the predict function.
 
-For evalutaion and analysis I implemented: accuracy, precision, f1 score, precision, plot weight evolution, plot loss history, and load clean data. These functions were used in my main function to illustrate the findings of how the model did. In main,  I made an instance of the classic AdaBoost and SoftBoost models with lam values of [0.0,0.1,0.5,0.9,1.0].
+For evalutaion and analysis I implemented: accuracy, precision, f1 score, precision, plot weight evolution, plot loss history, and load clean data. These functions were used in my main function to illustrate the findings of how the models did. In main, I made an instance of the classic AdaBoost and SoftBoost models with lam values of [0.0,0.1,0.5,0.9,1.0].
 
 ## Results Discussion
 
