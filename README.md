@@ -40,9 +40,8 @@ The worst SoftBoost was lam = 0.0 and 0.1. They had different epsilons and alpha
 The best SoftBoost was lam = 0.9. Training accuracy of 82.02%. Testing accuracy of 82.68%. Precision values of 81.16%. Recall is 75.68%. F1 score is 78.32%. Lam = 0.9 beat regular AdaBoost on every measurement for the tested data. The weights evolution graph shows an increase in the number of samples with higher weights in later boosting rounds. But it still chases some overlapping class samples. At lam = 0.9, the model is mostly AdaBoost and a little hinge influence to allow a few misclassifiers in the margin and soft margins. At lam = 1.0, the model is a vanilla AdaBoost model, verified by having the same values and graphs as the regular AdaBoost model. At lam = 0.5, the model is half AdaBoost and half SVM loss function. It had the highest training accuracy of 82.44%, but about -3% on testing accuracy with 79.33%. The weight evolution showed that more samples impacted the next decision stump than other models.
 
 The SoftBooster helped with generalization when the loss calculation is mostly AdaBoost loss with slight influence from SVM to allow softer margins. Comparing SoftBoost with lam = 0.9 to AdaBoost, there is an increase in testing accuracy of 0.56%, precision of 0.28%, recall of  1.26%, and F1 score of 0.86%.
-    
-I was surprised that lam = 0.5 didn’t do as well as or better than the regular AdaBoost. Also, I was shocked that recall, precision, and F1 score were in the same range of high 60s to low 80s for all versions of the model. Most were in the low to mid-70s percentage range.
 
+I was surprised that lam = 0.5 didn’t do as well as or better than the regular AdaBoost. Also, I was shocked that recall, precision, and F1 score were in the same range of high 60s to low 80s for all versions of the model. Most were in the low to mid-70s percentage range.
 
 
 ## Learned
@@ -55,4 +54,4 @@ I was surprised that lam = 0.5 didn’t do as well as or better than the regular
 
 ---
 
-*Note:* Some of the sections of README.md are from my final paper. So the reference [#] can be found in my final paper.
+*Note:* Some of the sections of README.md are from my final paper. So the reference [#] can be found in my final paper. The pdf and word are in the repository.
