@@ -54,7 +54,5 @@ I was surprised that lam = 0.5 didn’t do as well as or better than the regular
 - How different loss implementations can alter how well or poorly a model performs
 
 ---
-***
-___
 
-Note: Some of the sections of README.md are from my final paper. So the reference [#] can be found in my final paper.
+*Note:* Some of the sections of README.md are from my final paper. So the reference [#] can be found in my final paper.
