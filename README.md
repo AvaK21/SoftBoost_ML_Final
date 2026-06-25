@@ -1,5 +1,5 @@
 # SoftBoost
-- - 
+
 The project uses the AdaBoost base model. The extension I implemented was to mesh AdaBoost and SVM loss functionality inspired by Rätsch’s Soft Margins for AdaBoost, with quadratic loss with slack variables similar to support vector machines (2001). As he mentions, AdaBoost uses a hard margin pattern for predicting samples. AdaBoost does not perform well when there is noise in the data or overlapping class distributions because it chases outliers and overfits to them (2001). The goal is to improve the Adaboost model's robustness when it interacts with overlapping class distributions and noise. Therefore, replace hard margins with soft margins to allow misclassifications in the margins and to reduce overfitting to abnormal data points.  
 
 
@@ -53,5 +53,8 @@ I was surprised that lam = 0.5 didn’t do as well as or better than the regular
 - Better understanding of the update step in machine learning models
 - How different loss implementations can alter how well or poorly a model performs
 
-- - 
+---
+***
+___
+
 Note: Some of the sections of README.md are from my final paper. So the reference [#] can be found in my final paper.
